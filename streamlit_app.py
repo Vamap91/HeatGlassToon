@@ -1,6 +1,6 @@
 import streamlit as st
 # Configurações da página - DEVE ser a primeira chamada Streamlit
-st.set_page_config(page_title="MonitorAI (PRD)", page_icon="🔴", layout="centered")
+st.set_page_config(page_title="MonitorAI (TESTE TOON)", page_icon="🔴", layout="centered")
 
 from openai import OpenAI
 import tempfile
@@ -321,11 +321,12 @@ def get_script_status_class(status):
     else:
         return "script-nao-usado"
 
-# Modelo fixo: GPT-4 Turbo
-modelo_gpt = "gpt-4-turbo"
+# Modelo fixo: GPT-4o
+modelo_gpt = "gpt-4o"
 
 # Título
-st.title("MonitorAI")
+st.title("MonitorAI - TESTE TOON 🚀")
+st.write("**Versão de teste com formato TOON para redução de custos**")
 st.write("Análise inteligente de ligações: avaliação de atendimento ao cliente e conformidade com processos.")
 
 # Upload de áudio
